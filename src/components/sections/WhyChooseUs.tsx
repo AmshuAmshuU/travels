@@ -1,85 +1,79 @@
 "use client";
 
-import { Users, ShieldCheck, HeartHandshake, Plane, Compass, MessageCircle } from "lucide-react";
+import { ShieldCheck, HeartHandshake, Plane, Map, Stethoscope, MessageCircle } from "lucide-react";
 
 const features = [
   {
-    icon: Users,
-    title: "Senior-Friendly Tours",
-    desc: "Every journey is thoughtfully designed with the comfort and convenience of senior travelers and families in mind. We ensure easy pacing, accessible accommodations, and gentle itineraries that let you focus on the spiritual experience.",
-    accent: "linear-gradient(135deg, #D97706, #F59E0B)",
+    icon: Map,
+    title: "Guided Spiritual Journeys",
+    desc: "Step-by-step guidance through every sacred destination ensuring you experience the deep cultural and spiritual significance without any confusion.",
   },
   {
     icon: ShieldCheck,
-    title: "Guided Spiritual Journeys",
-    desc: "Our experienced travel coordinators provide step-by-step guidance through every sacred destination. From temple protocols to local customs, you travel with confidence and deep spiritual understanding.",
-    accent: "linear-gradient(135deg, #059669, #34D399)",
+    title: "Senior-Friendly Tours",
+    desc: "Thoughtfully designed with the comfort of senior travelers in mind. We ensure easy pacing, accessible stays, and gentle itineraries.",
   },
   {
     icon: HeartHandshake,
-    title: "Trusted Travel Coordination",
-    desc: "We partner with experienced and reliable spiritual travel operators who share our commitment to quality. Every aspect of your journey — transport, accommodation, meals — is carefully vetted and coordinated.",
-    accent: "linear-gradient(135deg, #DC2626, #FB923C)",
+    title: "Trusted Coordination",
+    desc: "We partner with highly reliable spiritual operators. Transport, accommodation, and daily meals are carefully vetted for hygiene and comfort.",
   },
   {
     icon: Plane,
-    title: "Comfortable Travel & Stay",
-    desc: "Premium accommodations and carefully selected transportation ensure your physical comfort matches the peace of your spiritual journey. Rest well, travel smoothly, arrive refreshed.",
-    accent: "linear-gradient(135deg, #7C3AED, #A78BFA)",
+    title: "Premium Accommodations",
+    desc: "Handpicked premium stays that provide a clean, peaceful environment so you can rest fully and focus entirely on your devotion.",
   },
   {
-    icon: Compass,
-    title: "Personalized Assistance",
-    desc: "Every traveler is unique. We provide personalized itineraries, dietary accommodations, medical support awareness, and flexible scheduling so your spiritual journey feels truly your own.",
-    accent: "linear-gradient(135deg, #0284C7, #38BDF8)",
+    icon: Stethoscope,
+    title: "Personalized Care",
+    desc: "We accommodate specific dietary requirements and ensure medical support awareness across all remote and high-altitude pilgrimage sites.",
   },
   {
     icon: MessageCircle,
-    title: "WhatsApp Support",
-    desc: "Instant communication at your fingertips. Our dedicated support team is available via WhatsApp for quick enquiries, real-time updates, and seamless coordination before and during your journey.",
-    accent: "linear-gradient(135deg, #16A34A, #4ADE80)",
+    title: "24/7 WhatsApp Support",
+    desc: "Instant communication with our team for enquiries, real-time updates, and continuous on-ground travel assistance throughout your journey.",
   },
 ];
 
 export default function WhyChooseUs() {
   return (
-    <section className="section why-choose-section">
-      {/* Floating background elements */}
-      <div className="why-choose-bg-orb why-choose-bg-orb-1" />
-      <div className="why-choose-bg-orb why-choose-bg-orb-2" />
-      <div className="why-choose-bg-orb why-choose-bg-orb-3" />
-
-      <div className="section-container">
-        <div className="why-choose-header reveal">
-          <span className="section-label">Why Us</span>
+    <section className="section bg-white relative" id="why-us">
+      <div className="section-container relative z-10">
+        
+        {/* Section Header */}
+        <div style={{ textAlign: "center", marginBottom: "4rem" }}>
+          <span className="section-label">Our Promise</span>
           <h2 className="section-title">Why Families Choose Us</h2>
-          <p className="section-subtitle" style={{ margin: "0 auto", textAlign: "center" }}>
-            Thoughtfully designed spiritual travel experiences that prioritize
-            comfort, trust, and meaningful connections.
+          <p className="section-subtitle" style={{ margin: "0 auto" }}>
+            We strip away the stress of travel coordination, offering thoughtfully designed spiritual experiences that prioritize comfort, safety, and deep meaningful connections.
           </p>
         </div>
 
-        <div className="why-choose-grid">
+        {/* Clean 3-Column Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-14">
           {features.map((feature, i) => {
             const Icon = feature.icon;
-
             return (
-              <div key={i} className="why-choose-card reveal">
-                <div
-                  className="why-choose-card-icon"
-                  style={{ background: feature.accent }}
-                >
-                  <Icon size={32} strokeWidth={1.5} />
+              <div key={i} className="flex flex-col items-start text-left group">
+                {/* Minimalist Icon */}
+                <div className="w-16 h-16 rounded-2xl bg-[#FFF7ED] flex items-center justify-center mb-6 group-hover:scale-105 group-hover:-translate-y-1 group-hover:bg-[#D97706] transition-all duration-300">
+                  <Icon size={30} className="text-[#D97706] group-hover:text-white transition-colors duration-300" strokeWidth={1.5} />
                 </div>
-                <div className="why-choose-card-content">
-                  <h3>{feature.title}</h3>
-                  <p>{feature.desc}</p>
-                </div>
+                
+                {/* Content */}
+                <h3 className="text-xl font-bold text-gray-900 mt-2 mb-3 font-[family-name:var(--font-heading)]">
+                  {feature.title}
+                </h3>
+                <p className="text-gray-500 leading-relaxed text-base">
+                  {feature.desc}
+                </p>
               </div>
             );
           })}
         </div>
+
       </div>
     </section>
   );
 }
+

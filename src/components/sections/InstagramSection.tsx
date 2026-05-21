@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { AtSign, Heart, Play, Camera } from "lucide-react";
+import { AtSign, Play, Camera } from "lucide-react";
 
 const posts = [
   { src: "/chardham.png", type: "reel", likes: "2.4K" },
@@ -56,10 +56,6 @@ export default function InstagramSection() {
                       <Camera size={16} />
                     </div>
                   )}
-                  <div className="insta-card-stats">
-                    <Heart size={14} fill="white" color="white" />
-                    <span>{post.likes}</span>
-                  </div>
                 </div>
               </div>
             );

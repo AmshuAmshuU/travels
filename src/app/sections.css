@@ -352,7 +352,7 @@
   position: relative; z-index: 2; text-align: center; max-width: 800px; padding: 2rem;
 }
 .contact-hero-title {
-  font-family: var(--font-heading); font-size: clamp(2.8rem, 6vw, 4.5rem);
+  font-family: var(--font-heading); font-size: clamp(2rem, 4.5vw, 3.2rem);
   color: white; font-weight: 700; line-height: 1.1; margin: 0.75rem 0 1.25rem;
   animation: fadeUp 0.9s ease forwards;
 }
@@ -390,34 +390,35 @@
   display: flex; align-items: center; justify-content: center; color: white;
 }
 .contact-intro-visual { position: relative; display: flex; align-items: center; justify-content: center; }
-.contact-intro-card-stack { position: relative; width: 100%; max-width: 360px; }
+.contact-intro-card-stack { position: relative; width: 100%; max-width: 480px; }
 .contact-intro-card { border-radius: 28px; position: relative; }
 .contact-intro-card-back {
-  position: absolute; inset: 0; border-radius: 28px; height: 300px;
+  position: absolute; inset: 0; border-radius: 28px;
   background: linear-gradient(135deg, rgba(217,119,6,0.15), rgba(234,179,8,0.1));
   border: 1px solid rgba(217,119,6,0.15); transform: rotate(6deg) translateY(12px);
 }
 .contact-intro-card-mid {
-  position: absolute; inset: 0; border-radius: 28px; height: 300px;
+  position: absolute; inset: 0; border-radius: 28px;
   background: linear-gradient(135deg, rgba(217,119,6,0.2), rgba(234,179,8,0.15));
   border: 1px solid rgba(217,119,6,0.2); transform: rotate(3deg) translateY(6px);
 }
 .contact-intro-card-front {
   position: relative; z-index: 3;
   background: white; border: 1px solid rgba(217,119,6,0.12);
-  box-shadow: 0 20px 60px rgba(217,119,6,0.12); padding: 2.5rem; text-align: center;
+  box-shadow: 0 20px 60px rgba(217,119,6,0.12); padding: 3.5rem 3rem; text-align: center;
 }
 .contact-intro-card-icon {
-  width: 80px; height: 80px; border-radius: 50%; margin: 0 auto 1.5rem;
+  width: 90px; height: 90px; border-radius: 50%; margin: 0 auto 2rem;
   background: linear-gradient(135deg, var(--saffron), var(--gold));
   display: flex; align-items: center; justify-content: center; color: white;
 }
-.contact-intro-card-front h3 { font-family: var(--font-heading); font-size: 1.3rem; color: var(--charcoal); margin-bottom: 0.5rem; }
-.contact-intro-card-front p { color: #6B7280; font-size: 0.9rem; line-height: 1.7; margin-bottom: 1.5rem; }
-.contact-intro-card-stats { display: flex; align-items: center; justify-content: center; gap: 1.5rem; }
+.contact-intro-card-icon svg { width: 36px; height: 36px; }
+.contact-intro-card-front h3 { font-family: var(--font-heading); font-size: 1.6rem; color: var(--charcoal); margin-bottom: 0.75rem; }
+.contact-intro-card-front p { color: #6B7280; font-size: 1rem; line-height: 1.8; margin-bottom: 2rem; }
+.contact-intro-card-stats { display: flex; align-items: center; justify-content: center; gap: 2rem; }
 .contact-intro-card-stats div { text-align: center; }
-.contact-intro-card-stats strong { display: block; font-family: var(--font-heading); font-size: 1.6rem; color: var(--saffron); }
-.contact-intro-card-stats span { font-size: 0.8rem; color: #9CA3AF; }
+.contact-intro-card-stats strong { display: block; font-family: var(--font-heading); font-size: 1.8rem; color: var(--saffron); }
+.contact-intro-card-stats span { font-size: 0.9rem; color: #9CA3AF; }
 .contact-intro-card-divider { width: 1px; height: 40px; background: rgba(217,119,6,0.2); }
 @media (max-width: 768px) {
   .contact-intro-grid { grid-template-columns: 1fr; gap: 2.5rem; }
@@ -601,7 +602,7 @@
 .contact-cta-overlay { position: absolute; inset: 0; background: rgba(15,20,25,0.87); }
 .contact-cta-content { position: relative; z-index: 2; max-width: 700px; margin: 0 auto; }
 .contact-cta-title {
-  font-family: var(--font-heading); font-size: clamp(2rem, 4vw, 3rem);
+  font-family: var(--font-heading); font-size: clamp(1.8rem, 3.5vw, 2.5rem);
   color: white; font-weight: 700; margin: 0.75rem 0 1.5rem;
 }
 .contact-cta-body { color: rgba(255,255,255,0.75); font-size: 1.1rem; line-height: 1.85; margin-bottom: 2.5rem; }
@@ -619,7 +620,7 @@
   position: relative; z-index: 2; text-align: center; max-width: 800px; width: 100%;
 }
 .about-hero-title {
-  font-family: var(--font-heading); font-size: clamp(2.5rem, 5vw, 4.5rem);
+  font-family: var(--font-heading); font-size: clamp(2rem, 4.5vw, 3.2rem);
   color: white; line-height: 1.15; font-weight: 700; margin: 1rem 0 1.5rem;
 }
 .about-hero-subtitle { color: rgba(255,255,255,0.85); font-size: 1.15rem; line-height: 1.8; margin-bottom: 2.5rem; }

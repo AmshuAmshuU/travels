@@ -33,14 +33,6 @@ export default function DestinationsSection() {
               <div className="destination-overlay">
                 <h3>{d.title}</h3>
                 <p>{d.desc}</p>
-                <a
-                  href="https://wa.me/919876543210"
-                  className="btn-explore"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Explore →
-                </a>
               </div>
             </div>
           ))}
