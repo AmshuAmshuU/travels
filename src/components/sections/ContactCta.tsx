@@ -4,7 +4,7 @@ import { MessageCircle, MapPin } from "lucide-react";
 
 export default function ContactCta() {
   return (
-    <div style={{ backgroundColor: "var(--white)", paddingBottom: "4rem" }}>
+    <div style={{ backgroundColor: "var(--white)", paddingBottom: "2rem" }}>
       <section className="contact-cta-section">
         <div className="contact-cta-overlay" />
         <div className="contact-cta-content reveal">

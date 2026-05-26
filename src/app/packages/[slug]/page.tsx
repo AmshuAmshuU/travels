@@ -324,40 +324,55 @@ export default function PackageDetailPage({ params }: { params: Promise<{ slug: 
           {/* 8, 9, 10. Vehicle, Hotel, Meals */}
           <section className="detail-section">
             <h2>Travel Comfort Details</h2>
-            <div className="comfort-grid">
-              <div className="comfort-card">
-                <Car size={24} className="text-saffron mb-2" />
-                <h4>Vehicle</h4>
-                <p><strong>{pkg.vehicle}</strong></p>
-                <p className="text-sm">{pkg.vehicleDesc}</p>
+            <div className="comfort-list-container">
+              <div className="comfort-list-card">
+                <div className="comfort-list-icon">
+                  <Car size={32} className="text-saffron" />
+                </div>
+                <div className="comfort-list-content">
+                  <h4>Vehicle</h4>
+                  <p><strong>{pkg.vehicle}</strong></p>
+                  <p className="text-sm">{pkg.vehicleDesc}</p>
+                </div>
               </div>
-              <div className="comfort-card">
-                <Building size={24} className="text-saffron mb-2" />
-                <h4>Accommodation</h4>
-                <p><strong>{pkg.hotel}</strong></p>
-                <p className="text-sm">{pkg.hotelDesc}</p>
+              <div className="comfort-list-card">
+                <div className="comfort-list-icon">
+                  <Building size={32} className="text-saffron" />
+                </div>
+                <div className="comfort-list-content">
+                  <h4>Accommodation</h4>
+                  <p><strong>{pkg.hotel}</strong></p>
+                  <p className="text-sm">{pkg.hotelDesc}</p>
+                </div>
               </div>
-              <div className="comfort-card">
-                <Utensils size={24} className="text-saffron mb-2" />
-                <h4>Meals</h4>
-                <p><strong>Vegetarian Meals</strong></p>
-                <p className="text-sm">{pkg.meals}</p>
+              <div className="comfort-list-card">
+                <div className="comfort-list-icon">
+                  <Utensils size={32} className="text-saffron" />
+                </div>
+                <div className="comfort-list-content">
+                  <h4>Meals</h4>
+                  <p><strong>Vegetarian Meals</strong></p>
+                  <p className="text-sm">{pkg.meals}</p>
+                </div>
               </div>
             </div>
           </section>
 
           {/* 11. Senior Citizen Notes */}
           <section className="detail-section">
-            <div className="senior-notes-box">
-              <h3><Users size={20} /> Senior Citizen Friendly Features</h3>
-              <ul>
+            <div className="senior-notes-banner">
+              <div className="senior-notes-header">
+                <Users size={32} color="#047857" />
+                <h3>Senior Citizen Friendly Features</h3>
+              </div>
+              <div className="senior-notes-grid">
                 {pkg.seniorNotes.map((note: string, idx: number) => (
-                  <li key={idx}>
-                    <CheckCircle2 size={16} />
+                  <div key={idx} className="senior-note-item">
+                    <CheckCircle2 size={24} color="#059669" />
                     <span>{note}</span>
-                  </li>
+                  </div>
                 ))}
-              </ul>
+              </div>
             </div>
           </section>
 

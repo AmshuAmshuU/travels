@@ -296,7 +296,7 @@ export default function PackagesPage() {
         </section>
 
         {/* FINAL CTA SECTION */}
-        <div style={{ backgroundColor: "var(--white)", paddingBottom: "4rem" }}>
+        <div style={{ backgroundColor: "var(--white)", paddingBottom: "2rem" }}>
           <section className="cta-section">
             <div className="cta-content reveal">
               <h2>Start Your Spiritual Journey</h2>

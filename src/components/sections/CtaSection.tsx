@@ -4,7 +4,7 @@ import { MessageCircle, Mail } from "lucide-react";
 
 export default function CtaSection() {
   return (
-    <div style={{ backgroundColor: "var(--white)", paddingBottom: "4rem" }}>
+    <div style={{ backgroundColor: "var(--white)", paddingBottom: "2rem" }}>
       <section className="cta-section" id="contact">
         <div className="cta-content reveal">
           <h2>Plan Your Next Spiritual Journey</h2>
