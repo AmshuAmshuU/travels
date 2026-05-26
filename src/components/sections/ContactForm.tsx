@@ -91,10 +91,10 @@ export default function ContactForm() {
                 Skip the form and reach out directly to our travel experts for instant booking and queries.
               </p>
               <div style={{ display: "flex", gap: "1.5rem", flexWrap: "wrap" }}>
-                <a href="https://wa.me/919876543210" target="_blank" rel="noreferrer" style={{ display: "flex", alignItems: "center", gap: "0.5rem", color: "#25D366", textDecoration: "none", fontSize: "0.95rem", fontWeight: 600 }}>
+                <a href="https://wa.me/918660878131" target="_blank" rel="noreferrer" style={{ display: "flex", alignItems: "center", gap: "0.5rem", color: "#25D366", textDecoration: "none", fontSize: "0.95rem", fontWeight: 600 }}>
                   WhatsApp Us
                 </a>
-                <a href="tel:+919876543210" style={{ display: "flex", alignItems: "center", gap: "0.5rem", color: "var(--gold)", textDecoration: "none", fontSize: "0.95rem", fontWeight: 600 }}>
+                <a href="tel:+918660878131" style={{ display: "flex", alignItems: "center", gap: "0.5rem", color: "var(--gold)", textDecoration: "none", fontSize: "0.95rem", fontWeight: 600 }}>
                   Call Now
                 </a>
               </div>

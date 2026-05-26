@@ -213,7 +213,7 @@ export default function PackagesPage() {
                     </div>
 
                     <div className="pkg-card-actions">
-                      <a href="https://wa.me/919876543210" className="pkg-card-btn-primary" target="_blank" rel="noopener noreferrer">
+                      <a href="https://wa.me/918660878131" className="pkg-card-btn-primary" target="_blank" rel="noopener noreferrer">
                         <MessageCircle size={17} />
                         Enquire on WhatsApp
                       </a>
@@ -250,7 +250,7 @@ export default function PackagesPage() {
               ))}
             </div>
 
-            <a href="https://wa.me/919876543210" className="btn-primary" target="_blank" rel="noopener noreferrer">
+            <a href="https://wa.me/918660878131" className="btn-primary" target="_blank" rel="noopener noreferrer">
               <HeartHandshake size={18} />
               Chat With Our Travel Coordinator
             </a>
@@ -302,7 +302,7 @@ export default function PackagesPage() {
               <h2>Start Your Spiritual Journey</h2>
               <p>Connect with our travel coordinators to explore available departures, package details, and personalized spiritual travel experiences.</p>
               <div className="cta-buttons">
-                <a href="https://wa.me/919876543210" className="btn-glow" target="_blank" rel="noopener noreferrer">
+                <a href="https://wa.me/918660878131" className="btn-glow" target="_blank" rel="noopener noreferrer">
                   <MessageCircle size={20} />
                   WhatsApp Enquiry
                 </a>

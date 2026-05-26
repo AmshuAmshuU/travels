@@ -89,14 +89,14 @@ export default function HeroSection() {
             View Packages
           </Link>
           <a
-            href="tel:+919876543210"
+            href="tel:+918660878131"
             className="btn-secondary"
           >
             <Phone size={18} />
             Call Now
           </a>
           <a
-            href="https://wa.me/919876543210?text=Hi%2C%20I'm%20interested%20in%20your%20spiritual%20tour%20packages."
+            href="https://wa.me/918660878131?text=Hi%2C%20I'm%20interested%20in%20your%20spiritual%20tour%20packages."
             className="btn-secondary"
             target="_blank"
             rel="noopener noreferrer"

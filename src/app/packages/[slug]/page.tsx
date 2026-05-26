@@ -193,7 +193,7 @@ export default function PackageDetailPage({ params }: { params: Promise<{ slug: 
   }
 
   const encodedMessage = encodeURIComponent(`Hi, I am interested in the ${pkg.title} package.`);
-  const whatsappLink = `https://wa.me/919876543210?text=${encodedMessage}`;
+  const whatsappLink = `https://wa.me/918660878131?text=${encodedMessage}`;
 
   return (
     <>
@@ -390,9 +390,9 @@ export default function PackageDetailPage({ params }: { params: Promise<{ slug: 
                 <MessageCircle size={18} />
                 WhatsApp Inquiry
               </a>
-              <a href="tel:+919876543210" className="btn-call-solid">
+              <a href="tel:+918660878131" className="btn-call-solid">
                 <Phone size={18} />
-                Call +91 98765 43210
+                Call +91 86608 78131
               </a>
             </div>
 

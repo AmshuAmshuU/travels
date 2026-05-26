@@ -14,7 +14,7 @@ export default function CtaSection() {
           </p>
           <div className="cta-buttons">
             <a
-              href="https://wa.me/919876543210"
+              href="https://wa.me/918660878131"
               className="btn-glow"
               target="_blank"
               rel="noopener noreferrer"

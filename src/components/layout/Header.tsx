@@ -46,12 +46,12 @@ export default function Header() {
           </ul>
 
           <div className="header-cta">
-            <a href="tel:+919876543210" className="btn-call-header">
+            <a href="tel:+918660878131" className="btn-call-header">
               <Phone size={16} />
               <span>Call Now</span>
             </a>
             <a
-              href="https://wa.me/919876543210?text=Hi%2C%20I'm%20interested%20in%20your%20spiritual%20tour%20packages."
+              href="https://wa.me/918660878131?text=Hi%2C%20I'm%20interested%20in%20your%20spiritual%20tour%20packages."
               className="btn-whatsapp-header"
               target="_blank"
               rel="noopener noreferrer"
@@ -93,7 +93,7 @@ export default function Header() {
             </Link>
           ))}
           <a
-            href="https://wa.me/919876543210?text=Hi%2C%20I'm%20interested%20in%20your%20spiritual%20tour%20packages."
+            href="https://wa.me/918660878131?text=Hi%2C%20I'm%20interested%20in%20your%20spiritual%20tour%20packages."
             className="btn-whatsapp-mobile"
             target="_blank"
             rel="noopener noreferrer"
@@ -103,7 +103,7 @@ export default function Header() {
             WhatsApp Enquiry
           </a>
           <a
-            href="tel:+919876543210"
+            href="tel:+918660878131"
             className="btn-call-mobile"
             onClick={() => setMobileNav(false)}
           >

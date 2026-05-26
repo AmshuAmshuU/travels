@@ -66,7 +66,7 @@ export default function TrustSection() {
               <a href="/about" className="btn-primary">More About Us</a>
               <div className="about-premium-call">
                 <span className="call-label">Call for assistance</span>
-                <a href="tel:+919876543210" className="call-number">+91 98765 43210</a>
+                <a href="tel:+918660878131" className="call-number">+91 86608 78131</a>
               </div>
             </div>
           </div>

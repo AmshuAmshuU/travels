@@ -44,7 +44,7 @@ export default function ContactInfo() {
               ))}
             </ul>
             <a
-              href="https://wa.me/919876543210"
+              href="https://wa.me/918660878131"
               className="contact-info-btn contact-info-btn-whatsapp"
               target="_blank"
               rel="noopener noreferrer"

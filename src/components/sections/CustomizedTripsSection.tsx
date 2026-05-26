@@ -34,7 +34,7 @@ export default function CustomizedTripsSection({ variant = 'primary' }: Customiz
                   Plan Your Trip
                 </Link>
                 <a
-                  href="https://wa.me/919876543210?text=Hi%2C%20I'm%20looking%20for%20a%20customized%20spiritual%20trip."
+                  href="https://wa.me/918660878131?text=Hi%2C%20I'm%20looking%20for%20a%20customized%20spiritual%20trip."
                   className="customized-trips-btn-outline"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -73,7 +73,7 @@ export default function CustomizedTripsSection({ variant = 'primary' }: Customiz
               Plan Your Trip
             </Link>
             <a
-              href="https://wa.me/919876543210?text=Hi%2C%20I'm%20looking%20for%20a%20customized%20spiritual%20trip."
+              href="https://wa.me/918660878131?text=Hi%2C%20I'm%20looking%20for%20a%20customized%20spiritual%20trip."
               className="customized-trips-btn-outline-light"
               target="_blank"
               rel="noopener noreferrer"
