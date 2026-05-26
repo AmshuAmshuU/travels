@@ -4,24 +4,11 @@ import { useState, useEffect, useCallback } from "react";
 import { Quote, Star } from "lucide-react";
 
 const testimonials = [
-  {
-    text: "A peaceful and well-coordinated spiritual journey for our parents. The support and guidance throughout the trip were excellent.",
-    name: "Ramesh K.",
-    location: "Bangalore",
-    initials: "R",
-  },
-  {
-    text: "Comfortable travel arrangements and smooth coordination made our pilgrimage experience memorable and stress-free.",
-    name: "Sunita M.",
-    location: "Mumbai",
-    initials: "S",
-  },
-  {
-    text: "The perfect spiritual travel experience for families looking for comfort and trusted support.",
-    name: "Priya S.",
-    location: "Hyderabad",
-    initials: "P",
-  },
+  { text: 'A peaceful and well-coordinated spiritual journey for our parents. The support and guidance throughout the trip were excellent. We felt completely safe and taken care of.', name: 'Ramesh K.', location: 'Bangalore', initials: 'R' },
+  { text: 'Comfortable travel arrangements and smooth coordination made our Char Dham pilgrimage experience memorable and stress-free. Highly recommended for senior citizens.', name: 'Sunita M.', location: 'Mumbai', initials: 'S' },
+  { text: 'The perfect spiritual travel experience for families. Our elderly parents enjoyed every moment without any discomfort. The driver was very experienced and patient.', name: 'Priya S.', location: 'Hyderabad', initials: 'P' },
+  { text: 'We booked a customized South India temple tour for our family of 8. Everything was perfectly organized — from the vehicle to the hotels. Truly a blessed journey.', name: 'Venkatesh R.', location: 'Chennai', initials: 'V' },
+  { text: 'As senior citizens, we were worried about long travel. But the team ensured comfortable stays and flexible schedules. Our Kashi-Ayodhya trip was unforgettable.', name: 'Lakshmi N.', location: 'Mysore', initials: 'L' },
 ];
 
 export default function TestimonialsSection() {

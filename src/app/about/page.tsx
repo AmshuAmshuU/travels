@@ -3,7 +3,6 @@
 import { useEffect } from "react";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
-import FloatingWhatsApp from "@/components/sections/FloatingWhatsApp";
 import CtaSection from "@/components/sections/CtaSection";
 import AboutHero from "@/components/sections/AboutHero";
 import AboutStory from "@/components/sections/AboutStory";
@@ -31,7 +30,6 @@ export default function AboutPage() {
       <AboutValues />
       <CtaSection />
       <Footer />
-      <FloatingWhatsApp />
     </main>
   );
 }

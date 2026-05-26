@@ -2,7 +2,8 @@
 
 import { useEffect, useState, useCallback } from "react";
 import Image from "next/image";
-import { Sparkles, MessageCircle } from "lucide-react";
+import { Sparkles, MessageCircle, Phone } from "lucide-react";
+import Link from "next/link";
 
 const heroSlides = [
   { src: "/hero-bg.png", alt: "Spiritual mountains landscape" },
@@ -73,27 +74,35 @@ export default function HeroSection() {
       {/* Content */}
       <div className="hero-content">
         <h1>
-          Premium <span className="highlight">Spiritual Journeys</span>
-          {" for Families & Senior Citizens"}
+          <span className="highlight">Spiritual Journeys</span>
+          {" Made Comfortable"}
         </h1>
+        <h2 style={{ color: "white", fontSize: "1.2rem", fontWeight: "600", marginBottom: "1.5rem", animation: "fadeUp 1s 0.1s ease both", textShadow: "0 2px 10px rgba(0,0,0,0.5)" }}>
+          Trusted Pilgrimage Tours Across South India
+        </h2>
         <p>
-          Comfortable and carefully planned spiritual tours across India and
-          selected international destinations with guided support, peaceful
-          experiences, and trusted travel coordination.
+          We organize comfortable and carefully planned spiritual tours for families, senior citizens, and devotional groups across India's most sacred destinations.
         </p>
         <div className="hero-buttons">
-          <a href="#destinations" className="btn-primary">
+          <Link href="/packages" className="btn-primary">
             <Sparkles size={18} />
-            Explore Packages
+            View Packages
+          </Link>
+          <a
+            href="tel:+919876543210"
+            className="btn-secondary"
+          >
+            <Phone size={18} />
+            Call Now
           </a>
           <a
-            href="https://wa.me/919876543210"
+            href="https://wa.me/919876543210?text=Hi%2C%20I'm%20interested%20in%20your%20spiritual%20tour%20packages."
             className="btn-secondary"
             target="_blank"
             rel="noopener noreferrer"
           >
             <MessageCircle size={18} />
-            Enquire on WhatsApp
+            WhatsApp Us
           </a>
         </div>
       </div>

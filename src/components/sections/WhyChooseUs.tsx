@@ -1,37 +1,37 @@
 "use client";
 
-import { ShieldCheck, HeartHandshake, Plane, Map, Stethoscope, MessageCircle } from "lucide-react";
+import { ShieldCheck, HeartHandshake, Car, Map, Users, Compass } from "lucide-react";
 
 const features = [
   {
-    icon: Map,
-    title: "Guided Spiritual Journeys",
-    desc: "Step-by-step guidance through every sacred destination ensuring you experience the deep cultural and spiritual significance without any confusion.",
+    icon: Users,
+    title: "Senior Citizen Friendly",
+    desc: "Tours designed with the comfort and safety of senior travelers as our top priority. Easy pacing and accessible arrangements throughout.",
+  },
+  {
+    icon: Car,
+    title: "Comfortable Travel",
+    desc: "Premium vehicles with experienced drivers ensuring smooth, comfortable journeys to every sacred destination.",
   },
   {
     icon: ShieldCheck,
-    title: "Senior-Friendly Tours",
-    desc: "Thoughtfully designed with the comfort of senior travelers in mind. We ensure easy pacing, accessible stays, and gentle itineraries.",
+    title: "Safe & Trusted Service",
+    desc: "Years of trusted service with verified stays, safe transport, and reliable coordination for complete peace of mind.",
+  },
+  {
+    icon: Compass,
+    title: "Experienced Drivers",
+    desc: "Our experienced drivers know every route, every temple, and every rest stop to make your pilgrimage smooth and worry-free.",
   },
   {
     icon: HeartHandshake,
-    title: "Trusted Coordination",
-    desc: "We partner with highly reliable spiritual operators. Transport, accommodation, and daily meals are carefully vetted for hygiene and comfort.",
+    title: "Peaceful Spiritual Journeys",
+    desc: "Every tour is planned for spiritual fulfillment with adequate time at each temple and a peaceful, unhurried travel experience.",
   },
   {
-    icon: Plane,
-    title: "Premium Accommodations",
-    desc: "Handpicked premium stays that provide a clean, peaceful environment so you can rest fully and focus entirely on your devotion.",
-  },
-  {
-    icon: Stethoscope,
-    title: "Personalized Care",
-    desc: "We accommodate specific dietary requirements and ensure medical support awareness across all remote and high-altitude pilgrimage sites.",
-  },
-  {
-    icon: MessageCircle,
-    title: "24/7 WhatsApp Support",
-    desc: "Instant communication with our team for enquiries, real-time updates, and continuous on-ground travel assistance throughout your journey.",
+    icon: Map,
+    title: "Customized Family & Group Trips",
+    desc: "Personalized tour planning for families, groups, and associations with flexible schedules and customized itineraries.",
   },
 ];
 

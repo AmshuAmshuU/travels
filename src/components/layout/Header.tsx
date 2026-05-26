@@ -1,7 +1,9 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { AtSign, MessageCircle, Menu, X } from "lucide-react";
+import { AtSign, MessageCircle, Menu, X, Phone } from "lucide-react";
+import Link from "next/link";
+import "./layout-updates.css";
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
@@ -28,29 +30,34 @@ export default function Header() {
 
   return (
     <>
+
       <header className={`header${scrolled ? " scrolled" : ""}`}>
         <div className="header-inner">
-          <a href="#" className="logo">
+          <Link href="/" className="logo">
             Tours<span>&</span>Travels
-          </a>
+          </Link>
 
           <ul className="nav-links">
             {navItems.map((item) => (
               <li key={item.label}>
-                <a href={item.href}>{item.label}</a>
+                <Link href={item.href}>{item.label}</Link>
               </li>
             ))}
           </ul>
 
           <div className="header-cta">
+            <a href="tel:+919876543210" className="btn-call-header">
+              <Phone size={16} />
+              <span>Call Now</span>
+            </a>
             <a
-              href="https://wa.me/919876543210"
+              href="https://wa.me/919876543210?text=Hi%2C%20I'm%20interested%20in%20your%20spiritual%20tour%20packages."
               className="btn-whatsapp-header"
               target="_blank"
               rel="noopener noreferrer"
             >
               <MessageCircle size={16} />
-              <span>WhatsApp Enquiry</span>
+              <span>WhatsApp Us</span>
             </a>
             <a
               href="https://instagram.com"
@@ -77,16 +84,16 @@ export default function Header() {
       <div className={`mobile-nav${mobileNav ? " active" : ""}`}>
         <div className="mobile-nav-content">
           {navItems.map((item) => (
-            <a
+            <Link
               key={item.label}
               href={item.href}
               onClick={() => setMobileNav(false)}
             >
               {item.label}
-            </a>
+            </Link>
           ))}
           <a
-            href="https://wa.me/919876543210"
+            href="https://wa.me/919876543210?text=Hi%2C%20I'm%20interested%20in%20your%20spiritual%20tour%20packages."
             className="btn-whatsapp-mobile"
             target="_blank"
             rel="noopener noreferrer"
@@ -94,6 +101,14 @@ export default function Header() {
           >
             <MessageCircle size={18} />
             WhatsApp Enquiry
+          </a>
+          <a
+            href="tel:+919876543210"
+            className="btn-call-mobile"
+            onClick={() => setMobileNav(false)}
+          >
+            <Phone size={18} />
+            Call Now
           </a>
           <a
             href="https://instagram.com"

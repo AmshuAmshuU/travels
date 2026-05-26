@@ -2,13 +2,14 @@
 
 import { useEffect, useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
-import FloatingWhatsApp from "@/components/sections/FloatingWhatsApp";
 import { CheckCircle2, MessageCircle, FileText, ChevronDown, HeartHandshake, Shield, MapPin, Users, Star, Clock, Compass } from "lucide-react";
 
 const packages = [
   {
+    slug: 'char-dham-yatra',
     title: "Char Dham Premium Yatra",
     price: "Starting From ₹89,999",
     desc: "Experience one of India's most sacred spiritual journeys with comfortable travel arrangements, selected stays, and guided support designed for peaceful travel experiences.",
@@ -18,6 +19,7 @@ const packages = [
     groupSize: "10-15"
   },
   {
+    slug: 'kashi-ayodhya-prayagraj',
     title: "Kashi • Ayodhya • Prayagraj Spiritual Tour",
     price: "Starting From ₹79,999",
     desc: "Explore the spiritual heart of India with sacred temple visits, Ganga Aarti experiences, and carefully planned premium travel support.",
@@ -27,6 +29,7 @@ const packages = [
     groupSize: "10-20"
   },
   {
+    slug: 'jyotirlinga-circuit',
     title: "Jyotirlinga Spiritual Circuit",
     price: "Starting From ₹94,999",
     desc: "A sacred journey across powerful Jyotirlinga destinations designed for spiritually enriching and comfortable travel experiences.",
@@ -36,6 +39,7 @@ const packages = [
     groupSize: "8-12"
   },
   {
+    slug: 'nepal-spiritual-journey',
     title: "Nepal Spiritual Journey",
     price: "Starting From ₹1,09,999",
     desc: "Discover peaceful Himalayan spiritual experiences with premium travel arrangements and visits to sacred destinations including Pashupatinath Temple.",
@@ -45,6 +49,7 @@ const packages = [
     groupSize: "8-15"
   },
   {
+    slug: 'kedarnath-badrinath',
     title: "Kedarnath & Badrinath Premium Tour",
     price: "Starting From ₹84,999",
     desc: "Experience a carefully planned Himalayan spiritual journey with guided support and comfortable travel experiences.",
@@ -54,6 +59,7 @@ const packages = [
     groupSize: "10-15"
   },
   {
+    slug: 'south-india-temple-circuit',
     title: "South India Temple Luxury Circuit",
     price: "Starting From ₹74,999",
     desc: "Explore sacred South Indian temples with comfortable travel arrangements, selected stays, and guided spiritual experiences.",
@@ -168,7 +174,7 @@ export default function PackagesPage() {
               {packages.map((pkg, i) => (
                 <div key={i} className={`pkg-card reveal ${i % 2 !== 0 ? "pkg-card-reversed" : ""}`}>
                   {/* Image side */}
-                  <div className="pkg-card-image-wrapper">
+                  <Link href={`/packages/${pkg.slug}`} className="pkg-card-image-wrapper" style={{ display: 'block', cursor: 'pointer' }}>
                     <div className="pkg-card-image">
                       <Image src={pkg.image} alt={pkg.title} fill style={{ objectFit: "cover" }} />
                       <div className="pkg-card-image-overlay" />
@@ -186,7 +192,7 @@ export default function PackagesPage() {
                         <span>{pkg.groupSize} People</span>
                       </div>
                     </div>
-                  </div>
+                  </Link>
 
                   {/* Content side */}
                   <div className="pkg-card-content">
@@ -211,10 +217,10 @@ export default function PackagesPage() {
                         <MessageCircle size={17} />
                         Enquire on WhatsApp
                       </a>
-                      <button className="pkg-card-btn-outline">
+                      <Link href={`/packages/${pkg.slug}`} className="pkg-card-btn-outline" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px', textDecoration: 'none' }}>
                         <FileText size={17} />
-                        Request Itinerary
-                      </button>
+                        View Details
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -310,7 +316,6 @@ export default function PackagesPage() {
       </main>
 
       <Footer />
-      <FloatingWhatsApp />
     </>
   );
 }

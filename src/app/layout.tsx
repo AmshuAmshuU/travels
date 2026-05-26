@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
 import "./sections.css";
+import FloatingWhatsApp from "@/components/sections/FloatingWhatsApp";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -23,7 +24,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={poppins.variable} suppressHydrationWarning>
-      <body className={`${poppins.className} antialiased`} suppressHydrationWarning>{children}</body>
+      <body className={`${poppins.className} antialiased`} suppressHydrationWarning>
+        {children}
+        <FloatingWhatsApp />
+      </body>
     </html>
   );
 }

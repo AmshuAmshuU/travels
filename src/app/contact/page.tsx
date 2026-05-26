@@ -3,7 +3,6 @@
 import { useEffect } from "react";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
-import FloatingWhatsApp from "@/components/sections/FloatingWhatsApp";
 import ContactHero from "@/components/sections/ContactHero";
 import ContactIntro from "@/components/sections/ContactIntro";
 import ContactInfo from "@/components/sections/ContactInfo";
@@ -37,7 +36,6 @@ export default function ContactPage() {
         <ContactCta />
       </main>
       <Footer />
-      <FloatingWhatsApp />
     </>
   );
 }

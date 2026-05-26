@@ -301,12 +301,51 @@ body { font-family: var(--font-body); color: var(--charcoal); background: var(--
 }
 
 /* ===== FLOATING WHATSAPP ===== */
+.floating-whatsapp-container {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.floating-whatsapp-tooltip {
+  background-color: white;
+  color: #1F2937;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  position: relative;
+  white-space: nowrap;
+}
+
+.floating-whatsapp-tooltip::after {
+  content: '';
+  position: absolute;
+  right: -6px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-width: 6px 0 6px 6px;
+  border-style: solid;
+  border-color: transparent transparent transparent white;
+}
+
 .floating-whatsapp {
-  position: fixed; bottom: 2rem; right: 2rem; z-index: 999;
-  width: 60px; height: 60px; border-radius: 50%;
+  position: relative;
+  width: 55px; height: 55px; border-radius: 50%;
   background: #25D366; display: flex; align-items: center; justify-content: center;
   box-shadow: 0 4px 20px rgba(37,211,102,0.4); transition: all 0.3s;
   text-decoration: none; color: white;
+}
+
+@media (max-width: 768px) {
+  .floating-whatsapp-tooltip {
+    display: none;
+  }
 }
 .floating-whatsapp:hover { transform: scale(1.1); box-shadow: 0 6px 30px rgba(37,211,102,0.5); }
 .floating-whatsapp .pulse {
