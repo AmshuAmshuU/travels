@@ -146,7 +146,7 @@
 .testimonial-dot.active {
   background: var(--saffron); width: 28px; border-radius: 5px;
 }
-@media (max-width: 900px) {
+@media (max-width: 1024px) {
   .testimonial-side-card { display: none; }
   .testimonial-featured-card { flex: 1; max-width: 100%; }
   .testimonial-carousel { padding: 0 1rem; }
@@ -493,7 +493,7 @@
   box-shadow: 0 0 6px #25D366; animation: pulse 2s infinite;
 }
 .contact-hours-note { font-size: 0.85rem; color: #6B7280; line-height: 1.7; }
-@media (min-width: 640px) and (max-width: 900px) {
+@media (min-width: 640px) and (max-width: 1024px) {
   .contact-info-grid { grid-template-columns: repeat(2, 1fr); }
 }
 @media (max-width: 639px) {
@@ -557,7 +557,7 @@
 }
 .contact-form-success h3 { font-family: var(--font-heading); font-size: 1.8rem; color: white; }
 .contact-form-success p { color: rgba(255,255,255,0.6); font-size: 1rem; line-height: 1.7; }
-@media (max-width: 900px) {
+@media (max-width: 1024px) {
   .contact-form-grid { grid-template-columns: 1fr; gap: 2.5rem; }
   .form-row { grid-template-columns: 1fr; }
 }
@@ -591,7 +591,7 @@
   display: flex; align-items: center; justify-content: center; color: white;
 }
 .contact-why-card p { color: #374151; font-size: 0.95rem; line-height: 1.65; font-weight: 500; margin-top: 0.2rem; }
-@media (max-width: 900px) { .contact-why-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 1024px) { .contact-why-grid { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 540px) { .contact-why-grid { grid-template-columns: 1fr; } }
 
 /* ===== CONTACT CTA ===== */
@@ -649,7 +649,7 @@
 .about-story-image-sub > div {
   position: relative !important; width: 100% !important; height: 100% !important;
 }
-@media (max-width: 900px) {
+@media (max-width: 1024px) {
   .about-story-grid { grid-template-columns: 1fr; gap: 3rem; }
   .about-story-images { height: 400px; max-width: 600px; margin: 0 auto; width: 100%; }
 }
@@ -769,7 +769,7 @@
   color: #4B5563; font-size: 0.85rem; font-weight: 600;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1024px) {
   .pkg-highlights-grid { grid-template-columns: repeat(3, 1fr); }
 }
 @media (max-width: 540px) {
@@ -934,7 +934,7 @@
 }
 
 /* Responsive — packages cards */
-@media (max-width: 900px) {
+@media (max-width: 1024px) {
   .pkg-card {
     grid-template-columns: 1fr;
   }
