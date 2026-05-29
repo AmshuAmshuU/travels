@@ -4,7 +4,7 @@ import { MessageCircle, MapPin } from "lucide-react";
 
 export default function ContactCta() {
   return (
-    <div style={{ backgroundColor: "var(--white)", paddingBottom: "4rem" }}>
+    <div style={{ backgroundColor: "var(--white)", paddingBottom: "2rem" }}>
       <section className="contact-cta-section">
         <div className="contact-cta-overlay" />
         <div className="contact-cta-content reveal">
@@ -16,7 +16,7 @@ export default function ContactCta() {
           </p>
           <div className="contact-cta-buttons">
             <a
-              href="https://wa.me/919876543210"
+              href="https://wa.me/918660878131"
               className="btn-glow"
               target="_blank"
               rel="noopener noreferrer"

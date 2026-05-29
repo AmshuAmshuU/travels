@@ -20,7 +20,7 @@ export default function Footer() {
               <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                 <AtSign size={18} />
               </a>
-              <a href="https://wa.me/919876543210?text=Hi%2C%20I'm%20interested%20in%20your%20spiritual%20tour%20packages." target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+              <a href="https://wa.me/918660878131?text=Hi%2C%20I'm%20interested%20in%20your%20spiritual%20tour%20packages." target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
                 <MessageCircle size={18} />
               </a>
               <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
@@ -59,11 +59,11 @@ export default function Footer() {
             <ul className="footer-links footer-contact-list">
               <li>
                 <Phone size={15} className="footer-contact-icon" />
-                <a href="tel:+919876543210">+91 98765 43210</a>
+                <a href="tel:+918660878131">+91 86608 78131</a>
               </li>
               <li>
                 <MessageCircle size={15} className="footer-contact-icon" />
-                <a href="https://wa.me/919876543210?text=Hi%2C%20I'm%20interested%20in%20your%20spiritual%20tour%20packages." target="_blank" rel="noopener noreferrer">WhatsApp Support</a>
+                <a href="https://wa.me/918660878131?text=Hi%2C%20I'm%20interested%20in%20your%20spiritual%20tour%20packages." target="_blank" rel="noopener noreferrer">WhatsApp Support</a>
               </li>
               <li>
                 <Mail size={15} className="footer-contact-icon" />

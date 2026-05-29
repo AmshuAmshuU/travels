@@ -35,7 +35,7 @@ export default function SeniorSection() {
               ))}
             </ul>
             <a
-              href="https://wa.me/919876543210?text=Hi%2C%20I'm%20interested%20in%20senior%20citizen%20friendly%20tours."
+              href="https://wa.me/918660878131?text=Hi%2C%20I'm%20interested%20in%20senior%20citizen%20friendly%20tours."
               className="btn-primary"
               target="_blank"
               rel="noopener noreferrer"

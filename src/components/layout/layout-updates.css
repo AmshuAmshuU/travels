@@ -35,11 +35,11 @@
   display: inline-flex; 
   align-items: center; 
   gap: 0.5rem;
-  background: white;
-  color: var(--charcoal); 
+  background: white !important;
+  color: var(--charcoal) !important; 
   padding: 0.8rem 1.8rem; 
   border-radius: 50px;
-  font-size: 1rem; 
+  font-size: 1rem !important; 
   font-weight: 600; 
   font-family: var(--font-body);
   text-decoration: none; 
